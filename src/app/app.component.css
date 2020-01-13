@@ -1,0 +1,11 @@
+/* Handy CSS trick to ensure image maintains aspect ratio */
+img {
+  display: block;
+  max-height:100%;
+  max-width:100%;
+}
+
+/* Styling for image container */
+.image-container {
+  width: 250px;
+}
