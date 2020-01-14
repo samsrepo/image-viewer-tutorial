@@ -1,3 +1,8 @@
-<p>
-  image-viewer works!
-</p>
+<div *ngIf="open" class="viewer-container">
+    <div class="viewer-content">
+      <a class="close-button" (click)="close.emit()">
+          <i class="fa fas fa-chevron-left fa-5x fa-fw left-icon"></i>Close Image
+      </a>
+    <img class="main-img" [src]="imageURL"/>
+    </div>
+  </div>

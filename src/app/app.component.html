@@ -1,4 +1,4 @@
-<app-image-viewer></app-image-viewer>
+<app-image-viewer [imageURL]="imageURL" [open]="viewerOpen" (close)="viewerOpen = false"></app-image-viewer>
 <h1>Image Viewer Tutorial</h1>
 <div class="image-container" (click)="viewerOpen = true">
   <img [src]="imageURL"/>
